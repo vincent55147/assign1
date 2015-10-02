@@ -2,10 +2,10 @@
 PImage bg1,bg2,enemy,fighter,hp,treasure;
 int treasure1,treasure2,rect1,enemy1=0,enemy2,bg1x=0;
 void draw() {
-  bg1x++;
-  bg1x=bg1x%480;
+  bg1x+=2;
+  bg1x=bg1x%640;
   image(bg1,bg1x,0);
-  image(bg2,bg1x-480,0);
+  image(bg2,bg1x-640,0);
   enemy1++;
   enemy1=enemy1%640;
   image(enemy,enemy1,enemy2);
