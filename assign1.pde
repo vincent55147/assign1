@@ -1,11 +1,12 @@
 /* please implement your assign1 code in this file. */
-PImage bg1,bg2,enemy,fighter,hp,treasure;
+PImage bg1,bg2,enemy,fighter,hp,treasure,bg3;
 int treasure1,treasure2,rect1,enemy1=0,enemy2,bg1x=0;
 void draw() {
   bg1x+=2;
-  bg1x=bg1x%640;
+  bg1x=bg1x%1280;
   image(bg1,bg1x,0);
   image(bg2,bg1x-640,0);
+  image(bg3,bg1x-1280,0);
   enemy1++;
   enemy1=enemy1%640;
   image(enemy,enemy1,enemy2);
@@ -20,6 +21,7 @@ void setup () {
   size(640,480) ;  // must use this size.
   // your code
   bg1=loadImage("img/bg1.png");
+  bg3=loadImage("img/bg1.png");
   bg2=loadImage("img/bg2.png");
   fighter=loadImage("img/fighter.png");
   treasure=loadImage("img/treasure.png"); 
